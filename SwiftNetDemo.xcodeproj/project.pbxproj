@@ -27,6 +27,7 @@
 		18E5F09A1D31FCFA008B8001 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E5F08B1D31FCFA008B8001 /* UIImageView+WebCache.m */; };
 		18E5F09B1D31FCFA008B8001 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E5F08D1D31FCFA008B8001 /* UIView+WebCacheOperation.m */; };
 		18E5F09D1D31FD49008B8001 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E5F09C1D31FD49008B8001 /* ImageIO.framework */; };
+		18E5F0A61D322A5A008B8001 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E5F0A51D322A5A008B8001 /* DetailViewController.swift */; };
 		E1DA9DB21D313E30008E9AB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DA9DB11D313E30008E9AB4 /* AppDelegate.swift */; };
 		E1DA9DB41D313E30008E9AB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DA9DB31D313E30008E9AB4 /* ViewController.swift */; };
 		E1DA9DB91D313E30008E9AB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1DA9DB81D313E30008E9AB4 /* Assets.xcassets */; };
@@ -85,6 +86,7 @@
 		18E5F08C1D31FCFA008B8001 /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
 		18E5F08D1D31FCFA008B8001 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
 		18E5F09C1D31FD49008B8001 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		18E5F0A51D322A5A008B8001 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		E1DA9DAE1D313E30008E9AB4 /* SwiftNetDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftNetDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1DA9DB11D313E30008E9AB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1DA9DB31D313E30008E9AB4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -159,6 +161,7 @@
 		18E5F09F1D3205B7008B8001 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				18E5F0A41D322A34008B8001 /* DetailViewController */,
 				E1DA9DB31D313E30008E9AB4 /* ViewController.swift */,
 				18E5F06A1D31FC7E008B8001 /* FreeViewController.swift */,
 				E1DA9DC81D31404B008E9AB4 /* LimitViewController.swift */,
@@ -209,6 +212,14 @@
 				18E5F0681D31FC42008B8001 /* MainService.swift */,
 			);
 			name = Service;
+			sourceTree = "<group>";
+		};
+		18E5F0A41D322A34008B8001 /* DetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				18E5F0A51D322A5A008B8001 /* DetailViewController.swift */,
+			);
+			name = DetailViewController;
 			sourceTree = "<group>";
 		};
 		E1DA9DA51D313E30008E9AB4 = {
@@ -333,6 +344,7 @@
 			files = (
 				18E5F0971D31FCFA008B8001 /* UIImage+GIF.m in Sources */,
 				18E5F0901D31FCFA008B8001 /* SDWebImageCompat.m in Sources */,
+				18E5F0A61D322A5A008B8001 /* DetailViewController.swift in Sources */,
 				18E5F0961D31FCFA008B8001 /* UIButton+WebCache.m in Sources */,
 				18E5F0981D31FCFA008B8001 /* UIImage+MultiFormat.m in Sources */,
 				18E5F09B1D31FCFA008B8001 /* UIView+WebCacheOperation.m in Sources */,

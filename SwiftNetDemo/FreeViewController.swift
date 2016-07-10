@@ -72,7 +72,15 @@ class FreeViewController: UIViewController ,UITableViewDelegate,UITableViewDataS
 		cell.setM(tempModel);
         return cell;
     }
-    
+	
+	
+	func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+		let detailVC:DetailViewController = DetailViewController();
+		detailVC.model = dataArr.objectAtIndex(indexPath.row) as? AppModel;
+		self.navigationController?.pushViewController(detailVC, animated: true);
+	}
+	
+	
     /*
     // MARK: - Navigation
 
