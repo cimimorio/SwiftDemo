@@ -10,8 +10,8 @@ import UIKit
 
 class FreeViewController: UIViewController ,UITableViewDelegate,UITableViewDataSource{
 
-//    var data:
-    
+	var dataArr:NSMutableArray! = NSMutableArray();
+	
     var tableView:UITableView!;
     
     
@@ -21,6 +21,7 @@ class FreeViewController: UIViewController ,UITableViewDelegate,UITableViewDataS
         // Do any additional setup after loading the view.
         
         self.configUI();
+		self.loadData();
     }
 
     
@@ -29,9 +30,27 @@ class FreeViewController: UIViewController ,UITableViewDelegate,UITableViewDataS
         self.tableView = UITableView.init(frame: UIScreen.mainScreen().bounds, style: .Plain);
         self.tableView.delegate = self;
         self.tableView.dataSource = self;
-        
-        
+		self.view.addSubview(self.tableView);
+		
+		self.tableView.registerNib(UINib.init(nibName: "MyTableViewCell", bundle: NSBundle.mainBundle()), forCellReuseIdentifier: "cell");
+		
     }
+	
+	func loadData() ->  Void{
+		dispatch_async(dispatch_get_global_queue(0, 0)) { 
+			let service:MainService = MainService();
+			service.getFreeList { (data) in
+				self.dataArr = data.mutableCopy() as! NSMutableArray;
+				print(data);
+				dispatch_async(dispatch_get_main_queue(), { 
+					self.tableView.reloadData();
+				})
+			}
+		}
+	}
+	
+	
+	
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -39,13 +58,18 @@ class FreeViewController: UIViewController ,UITableViewDelegate,UITableViewDataS
     
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10;
+        return self.dataArr.count;
     }
-    
+	
+	func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+		return 100.0;
+	}
+	
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        
-        
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath);
+		
+		let tempModel:AppModel = dataArr.objectAtIndex(indexPath.row) as!AppModel;
+        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as!MyTableViewCell;
+		cell.setM(tempModel);
         return cell;
     }
     
