@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1810607F1D348ADD00A2E31B /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1810607E1D348ADD00A2E31B /* SnapKit.framework */; };
+		181060831D348B5000A2E31B /* SnapKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1810607E1D348ADD00A2E31B /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		18E5F0641D31FC1E008B8001 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E5F0621D31FC1E008B8001 /* MyTableViewCell.swift */; };
 		18E5F0651D31FC1E008B8001 /* MyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E5F0631D31FC1E008B8001 /* MyTableViewCell.xib */; };
 		18E5F0671D31FC35008B8001 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E5F0661D31FC35008B8001 /* AppModel.swift */; };
@@ -49,7 +51,21 @@
 		E1DA9DE31D3143D0008E9AB4 /* tabbar_reduceprice@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1DA9DE11D3143D0008E9AB4 /* tabbar_reduceprice@2x.png */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		181060821D348B3A00A2E31B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				181060831D348B5000A2E31B /* SnapKit.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1810607E1D348ADD00A2E31B /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = SwiftNetDemo/SnapKit.framework; sourceTree = "<group>"; };
 		18E5F0621D31FC1E008B8001 /* MyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
 		18E5F0631D31FC1E008B8001 /* MyTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyTableViewCell.xib; sourceTree = "<group>"; };
 		18E5F0661D31FC35008B8001 /* AppModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
@@ -116,6 +132,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18E5F09D1D31FD49008B8001 /* ImageIO.framework in Frameworks */,
+				1810607F1D348ADD00A2E31B /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,6 +244,7 @@
 			children = (
 				E1DA9DB01D313E30008E9AB4 /* SwiftNetDemo */,
 				18E5F09C1D31FD49008B8001 /* ImageIO.framework */,
+				1810607E1D348ADD00A2E31B /* SnapKit.framework */,
 				E1DA9DAF1D313E30008E9AB4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -268,6 +286,7 @@
 				E1DA9DAA1D313E30008E9AB4 /* Sources */,
 				E1DA9DAB1D313E30008E9AB4 /* Frameworks */,
 				E1DA9DAC1D313E30008E9AB4 /* Resources */,
+				181060821D348B3A00A2E31B /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -479,6 +498,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SwiftNetDemo",
+				);
 				INFOPLIST_FILE = SwiftNetDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yuxiao.SwiftNetDemo;
@@ -493,6 +516,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SwiftNetDemo",
+				);
 				INFOPLIST_FILE = SwiftNetDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yuxiao.SwiftNetDemo;

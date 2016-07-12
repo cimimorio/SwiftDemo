@@ -10,12 +10,13 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
-	public var model:AppModel?;
+	internal var model:AppModel!;
 	
 	var baseScorllView:UIScrollView?;
-	var icon:UIImageView?;
+	var icon:UIImageView!;
 	var name:UILabel!;
-	
+	var detail:UILabel!;
+	var downloadsLabel:UILabel!;
 	
 	
     override func viewDidLoad() {
@@ -27,9 +28,10 @@ class DetailViewController: UIViewController {
 		
 		
     }
-
+	// MARK: -
+	// MARK: 初始化UI
 	func configUI(){
-		//add a scrollview 
+		//add a scrollview
 		baseScorllView = UIScrollView.init(frame: UIScreen.mainScreen().bounds);
 		baseScorllView?.contentSize = CGSizeMake(UIScreen.mainScreen().bounds.width, 1000);
 		self.view.addSubview(baseScorllView!);
@@ -46,8 +48,37 @@ class DetailViewController: UIViewController {
 		baseScorllView?.addSubview(name!);
 		name.text = model?.name;
 		
+		//addDetaiLabel
+		detail = UILabel.init(frame: CGRectMake((icon?.frame.origin.x)!, CGRectGetMaxY(icon.frame), UIScreen.mainScreen().bounds.width - 20, 200));
+		detail.numberOfLines = 0;
+		detail.text = model.descriptionStr;
+		baseScorllView?.addSubview(detail);
+		
+		//add downloadLabel
+		downloadsLabel = UILabel.init();
+//		downloadsLabel.snp_makeConstraints { make in
+//			make
+//		}
 		
 	}
+	// MARK: -
+	// MARK: 加载数据
+	
+	// MARK: -
+	// MARK: 事件
+	
+	// MARK: -
+	// MARK: 数据请求
+	
+	// MARK: -
+	// MARK: 代理
+	
+	// MARK: -
+	// MARK: 业务逻辑
+	
+	// MARK: -
+	// MARK: 通知注册和销毁
+	
 	
 	
     override func didReceiveMemoryWarning() {
