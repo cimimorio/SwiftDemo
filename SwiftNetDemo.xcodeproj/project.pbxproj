@@ -7,8 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1810607F1D348ADD00A2E31B /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1810607E1D348ADD00A2E31B /* SnapKit.framework */; };
-		181060831D348B5000A2E31B /* SnapKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1810607E1D348ADD00A2E31B /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		181973391D34B1E800B38BB0 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 1819732A1D34B1E800B38BB0 /* LICENSE */; };
+		1819733A1D34B1E800B38BB0 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 1819732B1D34B1E800B38BB0 /* README.md */; };
+		1819733B1D34B1E800B38BB0 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1819732D1D34B1E800B38BB0 /* Constraint.swift */; };
+		1819733C1D34B1E800B38BB0 /* ConstraintAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1819732E1D34B1E800B38BB0 /* ConstraintAttributes.swift */; };
+		1819733D1D34B1E800B38BB0 /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1819732F1D34B1E800B38BB0 /* ConstraintDescription.swift */; };
+		1819733E1D34B1E800B38BB0 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181973301D34B1E800B38BB0 /* ConstraintItem.swift */; };
+		1819733F1D34B1E800B38BB0 /* ConstraintMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181973311D34B1E800B38BB0 /* ConstraintMaker.swift */; };
+		181973401D34B1E800B38BB0 /* ConstraintRelation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181973321D34B1E800B38BB0 /* ConstraintRelation.swift */; };
+		181973411D34B1E800B38BB0 /* Debugging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181973331D34B1E800B38BB0 /* Debugging.swift */; };
+		181973421D34B1E800B38BB0 /* EdgeInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181973341D34B1E800B38BB0 /* EdgeInsets.swift */; };
+		181973431D34B1E800B38BB0 /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181973351D34B1E800B38BB0 /* LayoutConstraint.swift */; };
+		181973441D34B1E800B38BB0 /* SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181973361D34B1E800B38BB0 /* SnapKit.swift */; };
+		181973451D34B1E800B38BB0 /* View+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181973371D34B1E800B38BB0 /* View+SnapKit.swift */; };
+		181973461D34B1E800B38BB0 /* ViewController+SnapKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181973381D34B1E800B38BB0 /* ViewController+SnapKit.swift */; };
 		18E5F0641D31FC1E008B8001 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E5F0621D31FC1E008B8001 /* MyTableViewCell.swift */; };
 		18E5F0651D31FC1E008B8001 /* MyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18E5F0631D31FC1E008B8001 /* MyTableViewCell.xib */; };
 		18E5F0671D31FC35008B8001 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E5F0661D31FC35008B8001 /* AppModel.swift */; };
@@ -30,6 +42,7 @@
 		18E5F09B1D31FCFA008B8001 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E5F08D1D31FCFA008B8001 /* UIView+WebCacheOperation.m */; };
 		18E5F09D1D31FD49008B8001 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E5F09C1D31FD49008B8001 /* ImageIO.framework */; };
 		18E5F0A61D322A5A008B8001 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18E5F0A51D322A5A008B8001 /* DetailViewController.swift */; };
+		D5BE72515335FE4EE04ECA9D /* Pods_SwiftNetDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DBEA1C77007C8201B9F36AD /* Pods_SwiftNetDemo.framework */; };
 		E1DA9DB21D313E30008E9AB4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DA9DB11D313E30008E9AB4 /* AppDelegate.swift */; };
 		E1DA9DB41D313E30008E9AB4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DA9DB31D313E30008E9AB4 /* ViewController.swift */; };
 		E1DA9DB91D313E30008E9AB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1DA9DB81D313E30008E9AB4 /* Assets.xcassets */; };
@@ -51,21 +64,22 @@
 		E1DA9DE31D3143D0008E9AB4 /* tabbar_reduceprice@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E1DA9DE11D3143D0008E9AB4 /* tabbar_reduceprice@2x.png */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		181060821D348B3A00A2E31B /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				181060831D348B5000A2E31B /* SnapKit.framework in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		1810607E1D348ADD00A2E31B /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = SwiftNetDemo/SnapKit.framework; sourceTree = "<group>"; };
+		1819732A1D34B1E800B38BB0 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		1819732B1D34B1E800B38BB0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1819732D1D34B1E800B38BB0 /* Constraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constraint.swift; sourceTree = "<group>"; };
+		1819732E1D34B1E800B38BB0 /* ConstraintAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintAttributes.swift; sourceTree = "<group>"; };
+		1819732F1D34B1E800B38BB0 /* ConstraintDescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintDescription.swift; sourceTree = "<group>"; };
+		181973301D34B1E800B38BB0 /* ConstraintItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintItem.swift; sourceTree = "<group>"; };
+		181973311D34B1E800B38BB0 /* ConstraintMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintMaker.swift; sourceTree = "<group>"; };
+		181973321D34B1E800B38BB0 /* ConstraintRelation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintRelation.swift; sourceTree = "<group>"; };
+		181973331D34B1E800B38BB0 /* Debugging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Debugging.swift; sourceTree = "<group>"; };
+		181973341D34B1E800B38BB0 /* EdgeInsets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EdgeInsets.swift; sourceTree = "<group>"; };
+		181973351D34B1E800B38BB0 /* LayoutConstraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutConstraint.swift; sourceTree = "<group>"; };
+		181973361D34B1E800B38BB0 /* SnapKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapKit.swift; sourceTree = "<group>"; };
+		181973371D34B1E800B38BB0 /* View+SnapKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+SnapKit.swift"; sourceTree = "<group>"; };
+		181973381D34B1E800B38BB0 /* ViewController+SnapKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+SnapKit.swift"; sourceTree = "<group>"; };
 		18E5F0621D31FC1E008B8001 /* MyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
 		18E5F0631D31FC1E008B8001 /* MyTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyTableViewCell.xib; sourceTree = "<group>"; };
 		18E5F0661D31FC35008B8001 /* AppModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
@@ -103,6 +117,8 @@
 		18E5F08D1D31FCFA008B8001 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
 		18E5F09C1D31FD49008B8001 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		18E5F0A51D322A5A008B8001 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		4DBEA1C77007C8201B9F36AD /* Pods_SwiftNetDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftNetDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A849BC4286ED920626795D41 /* Pods-SwiftNetDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftNetDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftNetDemo/Pods-SwiftNetDemo.release.xcconfig"; sourceTree = "<group>"; };
 		E1DA9DAE1D313E30008E9AB4 /* SwiftNetDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftNetDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1DA9DB11D313E30008E9AB4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1DA9DB31D313E30008E9AB4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -124,6 +140,7 @@
 		E1DA9DDD1D3143C4008E9AB4 /* tabbar_reduceprice_press@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_reduceprice_press@2x.png"; sourceTree = "<group>"; };
 		E1DA9DE01D3143D0008E9AB4 /* tabbar_reduceprice.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tabbar_reduceprice.png; sourceTree = "<group>"; };
 		E1DA9DE11D3143D0008E9AB4 /* tabbar_reduceprice@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tabbar_reduceprice@2x.png"; sourceTree = "<group>"; };
+		FE501B22AF7C23985C658D10 /* Pods-SwiftNetDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftNetDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftNetDemo/Pods-SwiftNetDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,13 +149,42 @@
 			buildActionMask = 2147483647;
 			files = (
 				18E5F09D1D31FD49008B8001 /* ImageIO.framework in Frameworks */,
-				1810607F1D348ADD00A2E31B /* SnapKit.framework in Frameworks */,
+				D5BE72515335FE4EE04ECA9D /* Pods_SwiftNetDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		181973291D34B1E800B38BB0 /* SnapKit */ = {
+			isa = PBXGroup;
+			children = (
+				1819732A1D34B1E800B38BB0 /* LICENSE */,
+				1819732B1D34B1E800B38BB0 /* README.md */,
+				1819732C1D34B1E800B38BB0 /* Source */,
+			);
+			path = SnapKit;
+			sourceTree = "<group>";
+		};
+		1819732C1D34B1E800B38BB0 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				1819732D1D34B1E800B38BB0 /* Constraint.swift */,
+				1819732E1D34B1E800B38BB0 /* ConstraintAttributes.swift */,
+				1819732F1D34B1E800B38BB0 /* ConstraintDescription.swift */,
+				181973301D34B1E800B38BB0 /* ConstraintItem.swift */,
+				181973311D34B1E800B38BB0 /* ConstraintMaker.swift */,
+				181973321D34B1E800B38BB0 /* ConstraintRelation.swift */,
+				181973331D34B1E800B38BB0 /* Debugging.swift */,
+				181973341D34B1E800B38BB0 /* EdgeInsets.swift */,
+				181973351D34B1E800B38BB0 /* LayoutConstraint.swift */,
+				181973361D34B1E800B38BB0 /* SnapKit.swift */,
+				181973371D34B1E800B38BB0 /* View+SnapKit.swift */,
+				181973381D34B1E800B38BB0 /* ViewController+SnapKit.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
 		18E5F0701D31FCFA008B8001 /* SDWebImage */ = {
 			isa = PBXGroup;
 			children = (
@@ -239,6 +285,23 @@
 			name = DetailViewController;
 			sourceTree = "<group>";
 		};
+		51A7FC8426EFB2E48095B703 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FE501B22AF7C23985C658D10 /* Pods-SwiftNetDemo.debug.xcconfig */,
+				A849BC4286ED920626795D41 /* Pods-SwiftNetDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C74D43641A3029DF1CC154EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4DBEA1C77007C8201B9F36AD /* Pods_SwiftNetDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E1DA9DA51D313E30008E9AB4 = {
 			isa = PBXGroup;
 			children = (
@@ -246,6 +309,8 @@
 				18E5F09C1D31FD49008B8001 /* ImageIO.framework */,
 				1810607E1D348ADD00A2E31B /* SnapKit.framework */,
 				E1DA9DAF1D313E30008E9AB4 /* Products */,
+				51A7FC8426EFB2E48095B703 /* Pods */,
+				C74D43641A3029DF1CC154EB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -260,6 +325,7 @@
 		E1DA9DB01D313E30008E9AB4 /* SwiftNetDemo */ = {
 			isa = PBXGroup;
 			children = (
+				181973291D34B1E800B38BB0 /* SnapKit */,
 				18E5F0A31D3206A8008B8001 /* Service */,
 				18E5F0A21D320692008B8001 /* Resource */,
 				18E5F0A11D32067E008B8001 /* Common */,
@@ -283,10 +349,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E1DA9DC01D313E30008E9AB4 /* Build configuration list for PBXNativeTarget "SwiftNetDemo" */;
 			buildPhases = (
+				77A32B8E13BAA306F558A8E8 /* Check Pods Manifest.lock */,
 				E1DA9DAA1D313E30008E9AB4 /* Sources */,
 				E1DA9DAB1D313E30008E9AB4 /* Frameworks */,
 				E1DA9DAC1D313E30008E9AB4 /* Resources */,
-				181060821D348B3A00A2E31B /* CopyFiles */,
+				3647F5F1D470BE71C9D9CBE4 /* Embed Pods Frameworks */,
+				89279632AE14256D35653369 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -343,6 +411,7 @@
 				E1DA9DD71D314399008E9AB4 /* tabbar_appfree_press@2x.png in Resources */,
 				E1DA9DE21D3143D0008E9AB4 /* tabbar_reduceprice.png in Resources */,
 				E1DA9DDE1D3143C4008E9AB4 /* tabbar_reduceprice_press.png in Resources */,
+				181973391D34B1E800B38BB0 /* LICENSE in Resources */,
 				E1DA9DD21D314386008E9AB4 /* tabbar_limitfree_press.png in Resources */,
 				E1DA9DDF1D3143C4008E9AB4 /* tabbar_reduceprice_press@2x.png in Resources */,
 				E1DA9DD31D314386008E9AB4 /* tabbar_limitfree_press@2x.png in Resources */,
@@ -356,6 +425,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3647F5F1D470BE71C9D9CBE4 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftNetDemo/Pods-SwiftNetDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77A32B8E13BAA306F558A8E8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		89279632AE14256D35653369 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftNetDemo/Pods-SwiftNetDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E1DA9DAA1D313E30008E9AB4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -363,26 +480,39 @@
 			files = (
 				18E5F0971D31FCFA008B8001 /* UIImage+GIF.m in Sources */,
 				18E5F0901D31FCFA008B8001 /* SDWebImageCompat.m in Sources */,
+				1819733F1D34B1E800B38BB0 /* ConstraintMaker.swift in Sources */,
 				18E5F0A61D322A5A008B8001 /* DetailViewController.swift in Sources */,
 				18E5F0961D31FCFA008B8001 /* UIButton+WebCache.m in Sources */,
 				18E5F0981D31FCFA008B8001 /* UIImage+MultiFormat.m in Sources */,
 				18E5F09B1D31FCFA008B8001 /* UIView+WebCacheOperation.m in Sources */,
+				1819733A1D34B1E800B38BB0 /* README.md in Sources */,
+				1819733E1D34B1E800B38BB0 /* ConstraintItem.swift in Sources */,
 				18E5F0951D31FCFA008B8001 /* SDWebImagePrefetcher.m in Sources */,
 				18E5F0671D31FC35008B8001 /* AppModel.swift in Sources */,
 				E1DA9DB41D313E30008E9AB4 /* ViewController.swift in Sources */,
 				18E5F0691D31FC42008B8001 /* MainService.swift in Sources */,
+				1819733C1D34B1E800B38BB0 /* ConstraintAttributes.swift in Sources */,
 				18E5F0931D31FCFA008B8001 /* SDWebImageDownloaderOperation.m in Sources */,
 				18E5F0911D31FCFA008B8001 /* SDWebImageDecoder.m in Sources */,
+				181973401D34B1E800B38BB0 /* ConstraintRelation.swift in Sources */,
 				E1DA9DB21D313E30008E9AB4 /* AppDelegate.swift in Sources */,
+				181973441D34B1E800B38BB0 /* SnapKit.swift in Sources */,
 				18E5F09A1D31FCFA008B8001 /* UIImageView+WebCache.m in Sources */,
 				18E5F08E1D31FCFA008B8001 /* NSData+ImageContentType.m in Sources */,
+				1819733D1D34B1E800B38BB0 /* ConstraintDescription.swift in Sources */,
 				18E5F0921D31FCFA008B8001 /* SDWebImageDownloader.m in Sources */,
+				181973421D34B1E800B38BB0 /* EdgeInsets.swift in Sources */,
+				181973431D34B1E800B38BB0 /* LayoutConstraint.swift in Sources */,
 				18E5F06B1D31FC7E008B8001 /* FreeViewController.swift in Sources */,
+				181973451D34B1E800B38BB0 /* View+SnapKit.swift in Sources */,
+				181973411D34B1E800B38BB0 /* Debugging.swift in Sources */,
 				E1DA9DCB1D314059008E9AB4 /* ReduceViewController.swift in Sources */,
 				E1DA9DC91D31404B008E9AB4 /* LimitViewController.swift in Sources */,
 				18E5F0941D31FCFA008B8001 /* SDWebImageManager.m in Sources */,
+				181973461D34B1E800B38BB0 /* ViewController+SnapKit.swift in Sources */,
 				18E5F0641D31FC1E008B8001 /* MyTableViewCell.swift in Sources */,
 				18E5F0991D31FCFA008B8001 /* UIImageView+HighlightedWebCache.m in Sources */,
+				1819733B1D34B1E800B38BB0 /* Constraint.swift in Sources */,
 				18E5F08F1D31FCFA008B8001 /* SDImageCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -495,6 +625,7 @@
 		};
 		E1DA9DC11D313E30008E9AB4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE501B22AF7C23985C658D10 /* Pods-SwiftNetDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -513,6 +644,7 @@
 		};
 		E1DA9DC21D313E30008E9AB4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A849BC4286ED920626795D41 /* Pods-SwiftNetDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

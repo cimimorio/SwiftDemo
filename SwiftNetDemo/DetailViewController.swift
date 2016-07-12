@@ -32,34 +32,54 @@ class DetailViewController: UIViewController {
 	// MARK: 初始化UI
 	func configUI(){
 		//add a scrollview
-		baseScorllView = UIScrollView.init(frame: UIScreen.mainScreen().bounds);
+		baseScorllView = UIScrollView.init();
 		baseScorllView?.contentSize = CGSizeMake(UIScreen.mainScreen().bounds.width, 1000);
 		self.view.addSubview(baseScorllView!);
 		
+		baseScorllView!.snp_makeConstraints { make in
+			make.edges.equalTo(self.view);
+		}
 		
 		//add imageView
-		icon = UIImageView.init(frame: CGRectMake(10, 10, 100, 100));
+		icon = UIImageView.init();
 		baseScorllView?.addSubview(icon!);
 		icon?.sd_setImageWithURL(NSURL.init(string: (model?.imageStr)!));
 		icon?.layer.cornerRadius = 10.0;
-		
+		icon.snp_makeConstraints { make in
+			make.top.equalTo(baseScorllView!).offset(10);
+			make.left.equalTo(baseScorllView!).offset(10);
+			make.width.equalTo(100.0);
+			make.height.equalTo(100.0);
+		}
 		//add nameLabel
-		name = UILabel.init(frame: CGRectMake(CGRectGetMaxX((icon?.frame)!), 10, 100, 50));
+		name = UILabel.init();
 		baseScorllView?.addSubview(name!);
 		name.text = model?.name;
-		
+		name.snp_makeConstraints { make in
+			make.left.equalTo(icon.snp_right).offset(10);
+			make.top.equalTo(baseScorllView!).offset(10);
+		}
 		//addDetaiLabel
-		detail = UILabel.init(frame: CGRectMake((icon?.frame.origin.x)!, CGRectGetMaxY(icon.frame), UIScreen.mainScreen().bounds.width - 20, 200));
+		detail = UILabel.init();
 		detail.numberOfLines = 0;
 		detail.text = model.descriptionStr;
 		baseScorllView?.addSubview(detail);
+		detail.snp_makeConstraints { make in
+			make.left.equalTo(baseScorllView!).offset(10);
+			make.width.equalTo(UIScreen.mainScreen().bounds.width - 20);
+			make.top.equalTo(icon.snp_bottom).offset(10);
+		}
 		
 		//add downloadLabel
 		downloadsLabel = UILabel.init();
-//		downloadsLabel.snp_makeConstraints { make in
-//			make
-//		}
-		
+		baseScorllView?.addSubview(downloadsLabel);
+		downloadsLabel.text = model.downloads;
+		downloadsLabel.snp_makeConstraints { make in
+			make.top.equalTo(name.snp_bottom).offset(10);
+			make.left.equalTo(icon.snp_right).offset(10);
+			make.right.equalTo(baseScorllView!).offset(10);
+			make.height.equalTo(30);
+		}
 	}
 	// MARK: -
 	// MARK: 加载数据
